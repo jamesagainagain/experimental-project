@@ -1,0 +1,34 @@
+PHAS0029 Numerical Results Summary
+====================================
+
+Infinite well: first four states
+n=1: E_num=0.010445294 eV, E_exact=0.010445282 eV, rel_err=1.079e-06, iter=3, |psi(+a)|=3.237e-15
+n=2: E_num=0.041781129 eV, E_exact=0.041781129 eV, rel_err=3.118e-10, iter=4, |psi(+a)|=9.332e-19
+n=3: E_num=0.094007541 eV, E_exact=0.094007541 eV, rel_err=4.485e-10, iter=4, |psi(+a)|=1.334e-18
+n=4: E_num=0.167124517 eV, E_exact=0.167124517 eV, rel_err=6.829e-10, iter=4, |psi(+a)|=2.011e-18
+
+High-n checks
+n=16: E_num=2.673992273 eV, E_exact=2.673992264 eV, rel_err=3.212e-09
+n=24: E_num=6.016482692 eV, E_exact=6.016482594 eV, rel_err=1.626e-08
+
+Convergence mini-study (n=4)
+N, E_num(eV), abs_error(eV)
+1200, 0.167124517, 1.456e-10
+1800, 0.167124517, 1.187e-10
+2400, 0.167124517, 1.141e-10
+
+Secant stress test
+poor guesses (0.40,0.45) eV -> E=0.376030 eV, nearest n=6, unintended=True
+
+Embedded harmonic potential
+V0 = 850 eV, hbar*omega estimate = 3.793846 eV
+n=1: E=1.896923 eV
+n=2: E=5.690769 eV
+n=3: E=9.484615 eV
+spacing(E2-E1,E3-E2)=(3.793846, 3.793846) eV
+
+Embedded finite-square potential
+V0 = 500 eV
+n=1: E=0.041309 eV, P_inner=0.999999
+n=2: E=0.165237 eV, P_inner=0.999998
+n=3: E=0.371783 eV, P_inner=0.999995
